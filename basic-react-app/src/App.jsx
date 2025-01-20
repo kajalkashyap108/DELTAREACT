@@ -1,8 +1,9 @@
 import "./App.css";
+//import CardTab from "./CardTab";
 import Title from "./Title";
-import Product from "./Product";
+//import Product from "./Product";
 import ProductTab from "./ProductTab";
-
+ // import CardTab from "./CardTab";
 
 /*function Soni(){
   return(
@@ -15,8 +16,8 @@ import ProductTab from "./ProductTab";
 function App() {
   return (
   <div>
-   <ProductTab />
-
+<ProductTab />
+ {/*<CardTab />*/}
   </div>
   
   );
