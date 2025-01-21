@@ -10,14 +10,17 @@ import ProductTab from "./ProductTab";
     <h1>I am Mrs.Kashyap</h1>
   )
 }*/
+//import MsgBox from "./MsgBox";
 
 
 
 function App() {
   return (
   <div>
+    <h2>Blockbuster Deals | shop Now</h2>
 <ProductTab />
- {/*<CardTab />*/}
+{/* <CardTab />
+ <MsgBox userName="kajal"  textColor="pink"/>*/}
   </div>
   
   );

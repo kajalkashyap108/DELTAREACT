@@ -1,21 +1,19 @@
-function Product({ title, Price, features }){
-   // const list = features.map((feature) => <li>feature</li>)
-  // console.log(features);
- //const list= features.map((feature) => <li>{feature}</li>);
- //let isDiscount = Price > 30000 ? "Discount of 5%" : ""  ;
+import Price from "./Price";
+
+function Product({ title,idx }){
+    let oldPrices=["12,345","11,000","12,456","2345"];
+let newPrices=["23,456","34,567","5,000","45,789"];
+let description = [["8,000 DPI","5 Programmable buttons"],
+["intuitive surface","designed for ipad pro"],
+["designed for ipad pro","intuitive surface"],
+["wireless","optical orientation"]];
 
     return(
         <div className="Product">
-         <h3>{title}</h3>
-         <h5>Price: {Price}</h5>
-         {Price > 30000 &&<p> "Discount of 5%"</p>}
-          {/* <p>{list}
-         </p> 
-        
-       <p>{features}</p> 
-         <p>{features2}</p>
-        <p>{isDiscount}</p>*/}
-        
+            <h4>{title}</h4>
+        <p>{description[idx][0]}</p>
+        <p>{description[idx][1]}</p>
+        <Price oldPrice={oldPrices[idx]} newPrice={newPrices[idx]} /> 
         </div>
     );
 } 
